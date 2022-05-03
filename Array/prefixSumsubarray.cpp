@@ -11,7 +11,7 @@ int preSum(int arr[],int n)
             for(int k=i;k<=j;k++)
             {
                 tsum+=arr[k];
-            }
+            }cout<<tsum<<" ";
             lsum=max(lsum,tsum);
         }
     }
@@ -19,7 +19,7 @@ int preSum(int arr[],int n)
 }
 int main()
 {
-    int arr[]={1,2,3,4,5,6,7,8,9,10};
+    int arr[]={1,2,3,4,5,-6,7,8,9,10};
     int n=sizeof(arr)/sizeof(int);
     cout<<"largest sum is "<<preSum(arr,n);
     return 0;
