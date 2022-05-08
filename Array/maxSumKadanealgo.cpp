@@ -2,18 +2,7 @@
 using namespace std;
 int maxSum(int arr[],int n)
 {
-    int lsum=0;
-    int csum=0;
-    for(int k=0;k<n;k++)
-            {
-                csum+=arr[k];
-                    if(csum<0)
-                    {
-                        csum=0;
-                    }
-                    lsum=max(lsum,csum);
-           }
-    return lsum;
+   e
 }
 int main()
 {

@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-    char a[]={'a','b','d','e','f','\0'};
+    char a[11]={'a','b','d','e','f','\0'};
     cout<<a<<endl;
     cout<<strlen(a)<<endl;
     cout<<sizeof(a)<<endl;
