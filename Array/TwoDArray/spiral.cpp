@@ -3,24 +3,29 @@
 using namespace std;
 void print(int arr[][100],int n,int m)
 {
+    int count =0;
+    int total=n*m;
     int sr=0;
     int er=n-1;
     int sc=0;
     int ec=m-1;
-    while(sc<=ec && sr<=er)
+    while(count<total)
     {
         int r,c;
         for(int c = sc ;c<=ec; c++)//start row
         {
             cout<<arr[sr][c]<<" ";
+            count++;
         }
         for(int r = sr + 1 ;r<=er; r++)//end col
         {
             cout<<arr[r][ec]<<" ";
+            count++;
         }
         for(int c = ec - 1 ;c>=sc; c--)//end row
         {
             cout<<arr[er][c]<<" ";
+            count++;
         }
         for(int r = er - 1 ;r>=sr+1; r--)//start col
         {
@@ -29,6 +34,7 @@ void print(int arr[][100],int n,int m)
                 break;
             }
             cout<<arr[r][sc]<<" ";
+            count++;
         }
         sr++;
         er--;
