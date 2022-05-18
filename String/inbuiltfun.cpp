@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     char a[100]="kiran";
-    char b[100]="patil";
+    char b[100]="kiran";
 
     cout<<strlen(a)<<endl;
     //strcpy(b,a);
