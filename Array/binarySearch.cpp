@@ -24,9 +24,9 @@ int main()
 {
     int arr[]={1,2,3,4,5,6,7,8,9,10};
     int n=sizeof(arr)/sizeof(int);
-    int index=search(arr,n,6);
-    if(index==-1)
+   
+    if(search(arr,n,6)==-1)
     {cout<<"not found"<<endl;}
-    else{cout<<"found at "<<index+1<<endl;}
+    else{cout<<"found at "<<search(arr,n,6)+1<<endl;}
     return 0;
 }
