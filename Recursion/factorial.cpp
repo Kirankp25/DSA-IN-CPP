@@ -1,4 +1,5 @@
 #include<iostream>
+using namespace std;
 int factorial(int n)
 {
     if(n==1 or n==0)
@@ -11,6 +12,6 @@ int factorial(int n)
 int main()
 {
     int n=5;
-    std::cout<<factorial(n);
+    cout<<factorial(n);
     return 0;
 }
