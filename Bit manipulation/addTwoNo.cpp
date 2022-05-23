@@ -1,20 +1,25 @@
 #include<iostream>
+using namespace std;
 /*void ithbit(int &n,int p)
 {
     int mask=n>>p;
     n=(mask&1) > 0 ? 1:0;
     
 }*/
-void equal()
-string add(string n,string p)
+//void equal()
+int add(int n,int p)
 {
+    int c;
+    c=n|p;
+    return c;
     
 
 }
 int main()
-{                           //13=1101
-    string n="11";                
-    string p="1";
+{                           
+    int n=2;
+    int p=2;
+    cout<<add(n,p);
     //std::cin>>p;
     //ithbit(n,p);
     //std::cout<<n;
