@@ -2,9 +2,13 @@
 using namespace std;
 void merge(int arr[],int s,int e)
 {
-    if(s>=e)
+    if(e==0 || e==1)
     return;
-    if(s<=e)
+    int fs=0;
+    int fe=e/2;
+    
+    if()
+    
 
 }
 int main()
@@ -14,6 +18,10 @@ int main()
     int e=sizeof(arr)/sizeof(int);
     //cout<<e<<endl;
     cout<<merge(arr,s,e);
+    for(int i=0;i<e;i++)
+    {
+        cout<<arr[i]<<" ";
+    }
     
     return 0;
 }
