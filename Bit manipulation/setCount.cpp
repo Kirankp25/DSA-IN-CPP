@@ -1,6 +1,7 @@
 #include<iostream>
 #include<algorithm>
 #include<vector>
+using namespace std;
 int setCount(int n)
 {
     int cnt=0;
@@ -16,8 +17,9 @@ int setCount(int n)
 int main()
 {
     int  n;
-    std::cin>>n;
+    cin>>n;
    
-    std::cout<<setCount(n);
+    cout<<setCount(n)<<endl;;
+    cout<<(n>>1);
     return 0;
 }
