@@ -1,9 +1,21 @@
 #include<iostream>
-using namespce std;
+#include<ctime>
+#include<vector>
+#include<algorithm>
+using namespace std;
 int main()
 {
-    int arr[5]={1,2,3,4,5,6,7,8,9,0};
-    for(auto x:arr)
-    cout<<x<<","<<endl;
+    int n;
+    cin>>n;
+    vector<int> arr(n,0);
+    for(int i=0;i<n;i++)
+    {
+        arr[i]=n-1;
+    }
+    auto start_time=clock();
+    sort(arr.begin(),arr.end());
+    auto end_time=clock();
+
+    cout<<end_time-start_time<<endl;
     return 0;
 }
