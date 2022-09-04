@@ -1,4 +1,5 @@
 #include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
 class product{
@@ -10,6 +11,13 @@ class product{
         product()           //default function || default constructor
         {
             cout<<"Hello kiran"<<endl;
+        }
+        product(int id,char *n,int mrp,int selling_price)
+        {
+            this->id=id;
+            this->mrp=mrp;
+            this->selling_price=selling_price
+            strcpy(name,n);
         }
         //setter
         void setmrp(int price)       //public member functions
@@ -33,10 +41,10 @@ class product{
 };
 int main()
 {
-    product camera;
+    product camera(101,"kiran",2000,1800);
 
-    camera.setmrp(100);
-    camera.setselling_price(200);
+    // camera.setmrp(100);
+    // camera.setselling_price(200);
     
     cout<<sizeof(camera)<<endl;
     cout<<"MRP="<<camera.getmrp()<<endl;
