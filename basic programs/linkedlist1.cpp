@@ -35,10 +35,11 @@ void insertAfter(Node* prev_node, int new_data)
     if (prev_node == NULL)
     {
         cout<<"The given previous node cannot be NULL";
-        return;
+        // return;
     }
- 
-    /* 2. allocate new node */
+
+    
+   /* 2. allocate new node */
     Node* new_node = new Node();
  
     /* 3. put in the data */
@@ -121,7 +122,7 @@ int main()
      
     // Insert 8, after 7. So linked
     // list becomes 1->7->8->6->4->NULL
-   insertAfter(head->next, 8);
+   insertAfter(head->next, 3);
      
     cout<<"Created Linked list is: ";
     printList(head);
