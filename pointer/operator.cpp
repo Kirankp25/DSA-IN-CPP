@@ -8,7 +8,8 @@ int main()
     // 
     float y=5.5;
     cout<<&y<<endl;
-
+    float y=5.5;
+    cout<<&y<<endl;
     //pointer
     //Dereferance operator to access variable value by its address
     int *xptr=&x;
