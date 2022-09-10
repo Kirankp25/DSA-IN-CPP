@@ -2,5 +2,6 @@
 using namespace std;
 int main()
 {
-    cout<<5/2;
+    double f=5/3;
+    cout<<f;
 }
