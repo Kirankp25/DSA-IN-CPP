@@ -1,7 +1,5 @@
 #include<iostream>
-#include<bits/stdc++.h>
 using namespace std;
-
 class node{
     public:
         int data;
@@ -11,22 +9,15 @@ class node{
             data=val;
             next=NULL;
         }
+
 };
-void tail(node* &head, int val){
-    
+void front(node* &head,int val){
     node* n=new node(val);
     if(head==NULL){
         head=n;
         return;
     }
-    node* temp=head;
-
-    while(temp->next!=NULL){
-        temp=temp->next;
-    }
-    temp->next=n;
-
-
+    n->next=head;
 }
 void display(node* head){
     node* temp=head;
@@ -38,11 +29,12 @@ void display(node* head){
     cout<<"NULL";
     cout<<endl;
 }
+
 int main(){
     node* head=NULL;
-    tail(head,1);
-    tail(head,2);
-    tail(head,3);
+    front(head,3);
+    front(head,2);
+    front(head,1);
     display(head);
 
     return 0;
