@@ -12,6 +12,18 @@ class node{
             next=NULL;
         }
 };
+boolean search(node* &head,int key)
+{
+    node* temp=head;
+    while(temp->data!=key)
+    {
+        temp=temp->next;
+    }
+    if(temp->next==NULL)
+    return false;
+    else 
+    return true;
+}
 void insertAt_Head(node* &head,int val)
 {
     node* n=new node(val);
@@ -72,6 +84,7 @@ int main(){
     insertAt_Head(head,0);
     insertAt_Head(head,-1);
     insertAt_Head(head,-2);
+    search(head ,0);
     display(head);
 
     return 0;
