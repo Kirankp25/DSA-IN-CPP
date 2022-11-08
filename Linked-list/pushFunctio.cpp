@@ -18,6 +18,30 @@ void pushFront(node* &head,int val)
     n->next=head;
     head=n;
 }
+void pushEnd(node* &head ,int val)
+{
+    node* n= new node(val);
+    if(head==NULL)
+    {
+        head=n;
+        return;
+    }
+    node* temp=head;
+    while(temp!=NULL)
+    {
+        temp=temp->next;
+    }
+    temp->next=n;
+
+}
+void pushAt(node* &head,int key)
+{
+    node* n=new node(key);
+    node* temp=head;
+    while(temp->next->data!=key)
+    {temp=temp->next;}
+    temp->next=n;
+}
 void display(node* head)
 {
     node* temp=head;
@@ -36,6 +60,8 @@ int main()
     pushFront(head,4);
     pushFront(head,5);
     pushFront(head,6);
+    pushAt(head,4);
+    pushEnd(head,0);
     display(head);
     return 0;
 
