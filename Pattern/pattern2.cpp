@@ -17,8 +17,12 @@ int main()
            
             c++;
         }
-        c=c-(i+1);
-        cout << "\n";
+        c++;
     }
     return 0;
 }
+// E
+// D E
+// C D E
+// B C D E
+// A B C D E
