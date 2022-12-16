@@ -2,7 +2,9 @@
 using namespace std;
 int main()
 {
-    string;
+    string arr;
     cin>>arr;
+    cout<<arr<<endl;
+    cout<<arr[0];
     return 0;
 }
