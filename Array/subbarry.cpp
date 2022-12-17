@@ -10,6 +10,7 @@ void PrintSubArray(int arr[],int n)
             {
                 cout<<arr[k]<<",";
             }
+            cout<<endl;
             
             
         }
