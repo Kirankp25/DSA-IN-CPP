@@ -32,4 +32,5 @@ int main()
     PrintSubArray(arr,n);
     
     return 0;
+    
 }
