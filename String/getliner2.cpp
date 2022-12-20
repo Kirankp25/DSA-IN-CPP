@@ -4,9 +4,10 @@
 using namespace std;
 int main()
 {
-    string s="kiran";
+    string s="k";
     //cin>>s;
     reverse(s.begin(),s.end());
+    toupper(s);
     cout<<s;
     return 0;
 }
