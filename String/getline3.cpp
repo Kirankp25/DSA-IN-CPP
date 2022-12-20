@@ -7,7 +7,7 @@ int main()
     string s="k";
     //cin>>s;
     reverse(s.begin(),s.end());
-    toupper(s);
+    // toupper(s);
     cout<<s;
     return 0;
 }
