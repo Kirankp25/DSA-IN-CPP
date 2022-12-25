@@ -6,13 +6,13 @@ void PrintSubArray(int arr[],int n)
     {
         for(int j=i;j<n;j++)
         {
-            int s=0;
+            
             for(int k=i;k<=j;k++)
             {
                 cout<<arr[k]<<",";
-                s+=arr[k];
+                //s+=arr[k];
             }
-            if(s==3)
+            
             cout<<endl;
             
             
