@@ -133,7 +133,7 @@ int main()
 	
 	// Insert 8, after 7. So linked
 	// list becomes 1->7->8->6->4->NULL
-	insertAfter(head->next, 8);
+	insertAfter(head->next->next->next, 8);
 	
 	cout<<"Created Linked list is: ";
 	printList(head);
