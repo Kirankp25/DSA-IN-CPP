@@ -32,6 +32,17 @@ void append(node* &head,int val)
 	}
 	temp->next=n;
 }
+void pop_from(node* &head ,int val){
+	node* temp=head;
+	while(temp->next->data!=val){
+	//while(temp->next->data!=val){
+        temp=temp->next;
+    }
+    node* todelete=temp->next;
+    temp->next=temp->next->next;
+
+    delete todelete;
+}
 void print(node* head)
 {
 	while(head!=NULL)
@@ -48,8 +59,10 @@ int main()
 	
 	push(head,1);
 	push(head,2);
+	push(head,3);
 	print(head);
-	append(head,3);
+	// append(head,3);
+	pop_from(head,3);
 	print(head);
 	
 	return 0;
