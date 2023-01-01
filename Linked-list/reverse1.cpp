@@ -16,15 +16,14 @@ void push(node* &head,int val){
     n->next=head;
     head=n;
 }
-//to find a length of given ll
-int length(node* head){
+ void length(node* head){
     int cnt=0;
     while(head!=NULL){
         cnt++;
         head=head->next;
 
     }
-    return cnt;
+    cout<<"Length:"<<cnt<<endl;
 }
 void search(node* head,int key){
     // int l=length(head);
@@ -53,13 +52,28 @@ void print(node* head){
     }
     cout<<endl;
 }
+void reverse(node* head){
+    node* current=head;
+    node* next=NULL;
+    node* pre=NULL;
+    while(current!=NULL){
+        next=current->next;
+        current->next=pre;
+        pre=current;
+        current=next;
+    }
+    head=pre;
+
+}
 int main(){
     node* head=NULL;
     push(head,1);
     push(head,2);
     push(head,3);
-    // length(head);
-    print(head);
+    length(head);
     search(head,3);
+    print(head);
+    reverse(head);
+    print(head);
     return 0;
 }
