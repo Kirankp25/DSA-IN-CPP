@@ -48,7 +48,7 @@ void search(node* head,int key){
     int cnt=0;
     while(head!=NULL){
         if(head->data==key){
-            cout<<"element found at index"<<cnt<<endl;
+            cout<<"element found at index "<<cnt<<endl;
             return;
         }
         cnt++;
