@@ -1,16 +1,14 @@
 #include<iostream>
-void factorial(int n)
+using namespace std;
+int fabbo(int n)
 {
-    if(n==1 or n==0)
-    return n;
-    while(n--)
-    {
-        
-    }
+    if(n<=1)
+        return n;
+    return fabbo(n-1)+fabbo(n-2);
 }
 int main()
 {
     int n=5;
-    std::cout<<fabbo(n);
+    std::cout<<fabbo(n)<<" ";
     return 0;
 }
